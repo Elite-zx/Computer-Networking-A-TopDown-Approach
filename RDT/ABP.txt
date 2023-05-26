@@ -1,0 +1,111 @@
+-----  Stop and Wait Network Simulator Version 1.1 -------- 
+
+Enter the number of messages to simulate: Enter  packet loss probability [enter 0.0 for no loss]:Enter packet corruption probability [0.0 for no corruption]:Enter average time between messages from sender's layer5 [ > 0.0]:Enter TRACE:
+EVENT time: 28.058609,  type: 1, fromlayer5  entity: 0
+A is sending packet 0 !
+
+EVENT time: 33.523705,  type: 2, fromlayer3  entity: 1
+notcorrupt and target packet 0! sending right ACK!
+          TOLAYER3: packet being corrupted
+
+EVENT time: 38.755318,  type: 2, fromlayer3  entity: 0
+corrupt or not target ACK 0! will timeout and retransmit!
+
+EVENT time: 40.058609,  type: 0, timerinterrupt   entity: 0
+sender A is retransmiting packet 0 !
+          TOLAYER3: packet being lost
+
+EVENT time: 52.058609,  type: 0, timerinterrupt   entity: 0
+sender A is retransmiting packet 0 !
+          TOLAYER3: packet being lost
+
+EVENT time: 52.687260,  type: 1, fromlayer5  entity: 0
+sender A is waiting for ACK!
+
+EVENT time: 64.058609,  type: 0, timerinterrupt   entity: 0
+sender A is retransmiting packet 0 !
+          TOLAYER3: packet being corrupted
+
+EVENT time: 65.758194,  type: 1, fromlayer5  entity: 0
+sender A is waiting for ACK!
+
+EVENT time: 67.352928,  type: 1, fromlayer5  entity: 0
+sender A is waiting for ACK!
+
+EVENT time: 68.525871,  type: 2, fromlayer3  entity: 1
+corrupt or not target packet! sending last receiving ACK!
+
+EVENT time: 73.798103,  type: 2, fromlayer3  entity: 0
+ACK 0 packet  is not corrupt!
+
+EVENT time: 80.230942,  type: 1, fromlayer5  entity: 0
+A is sending packet 1 !
+
+EVENT time: 86.260590,  type: 2, fromlayer3  entity: 1
+notcorrupt and target packet 1! sending right ACK!
+          TOLAYER3: packet being lost
+
+EVENT time: 92.230942,  type: 0, timerinterrupt   entity: 0
+sender A is retransmiting packet 1 !
+          TOLAYER3: packet being corrupted
+
+EVENT time: 96.294548,  type: 2, fromlayer3  entity: 1
+corrupt or not target packet! sending last receiving ACK!
+          TOLAYER3: packet being corrupted
+
+EVENT time: 98.078468,  type: 2, fromlayer3  entity: 0
+corrupt or not target ACK 1! will timeout and retransmit!
+
+EVENT time: 101.773994,  type: 1, fromlayer5  entity: 0
+sender A is waiting for ACK!
+
+EVENT time: 104.230942,  type: 0, timerinterrupt   entity: 0
+sender A is retransmiting packet 1 !
+          TOLAYER3: packet being corrupted
+
+EVENT time: 111.432777,  type: 2, fromlayer3  entity: 1
+corrupt or not target packet! sending last receiving ACK!
+
+EVENT time: 114.063431,  type: 2, fromlayer3  entity: 0
+ACK 1 packet  is not corrupt!
+
+EVENT time: 119.270721,  type: 1, fromlayer5  entity: 0
+A is sending packet 0 !
+          TOLAYER3: packet being lost
+
+EVENT time: 131.270721,  type: 0, timerinterrupt   entity: 0
+sender A is retransmiting packet 0 !
+
+EVENT time: 132.329193,  type: 2, fromlayer3  entity: 1
+notcorrupt and target packet 0! sending right ACK!
+          TOLAYER3: packet being lost
+
+EVENT time: 143.270721,  type: 0, timerinterrupt   entity: 0
+sender A is retransmiting packet 0 !
+
+EVENT time: 148.468216,  type: 1, fromlayer5  entity: 0
+sender A is waiting for ACK!
+
+EVENT time: 148.544815,  type: 2, fromlayer3  entity: 1
+corrupt or not target packet! sending last receiving ACK!
+          TOLAYER3: packet being lost
+
+EVENT time: 149.202499,  type: 1, fromlayer5  entity: 0
+sender A is waiting for ACK!
+
+EVENT time: 155.270721,  type: 0, timerinterrupt   entity: 0
+sender A is retransmiting packet 0 !
+          TOLAYER3: packet being corrupted
+
+EVENT time: 157.026398,  type: 2, fromlayer3  entity: 1
+corrupt or not target packet! sending last receiving ACK!
+
+EVENT time: 159.904236,  type: 2, fromlayer3  entity: 0
+ACK 0 packet  is not corrupt!
+
+EVENT time: 175.140030,  type: 1, fromlayer5  entity: 0
+A is sending packet 1 !
+
+EVENT time: 182.258911,  type: 2, fromlayer3  entity: 1
+ Simulator terminated at time 182.258911
+ after sending 10 msgs from layer5
