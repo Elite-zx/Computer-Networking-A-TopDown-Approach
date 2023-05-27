@@ -1,0 +1,196 @@
+-----  Stop and Wait Network Simulator Version 1.1 -------- 
+
+Enter the number of messages to simulate: Enter  packet loss probability [enter 0.0 for no loss]:Enter packet corruption probability [0.0 for no corruption]:Enter average time between messages from sender's layer5 [ > 0.0]:Enter TRACE:
+EVENT time: 9.352870,  type: 1, fromlayer5  entity: 0
+A is sending packet 0
+
+EVENT time: 14.817965,  type: 2, fromlayer3  entity: 1
+notcorrupt and expected packet 0! sending right ACK 0!
+          TOLAYER3: packet being corrupted
+
+EVENT time: 17.562420,  type: 1, fromlayer5  entity: 0
+A is sending packet 1
+          TOLAYER3: packet being lost
+
+EVENT time: 18.840223,  type: 1, fromlayer5  entity: 0
+A is sending packet 2
+          TOLAYER3: packet being corrupted
+
+EVENT time: 20.049578,  type: 2, fromlayer3  entity: 0
+ACK 0 packet  is  corrupt! will timeout and retransmit all packets in the sliding window!
+
+EVENT time: 21.352871,  type: 0, timerinterrupt   entity: 0
+Elite-zx: sender A GO BACK N, from packet 0 to packet 2 
+          TOLAYER3: packet being lost
+
+EVENT time: 23.197201,  type: 1, fromlayer5  entity: 0
+A is sending packet 3
+
+EVENT time: 23.307489,  type: 2, fromlayer3  entity: 1
+corrupt or not expected packet 1 (2)! sending last receiving ACK 0!
+
+EVENT time: 25.673830,  type: 2, fromlayer3  entity: 0
+ACK 0 packet is not corrupt or duplicated! 
+The earliest sent packet is acknowledged, restart timer and move sliding window!
+
+EVENT time: 28.785702,  type: 1, fromlayer5  entity: 0
+A is sending packet 4
+          TOLAYER3: packet being lost
+
+EVENT time: 32.735916,  type: 2, fromlayer3  entity: 1
+notcorrupt and expected packet 1! sending right ACK 1!
+          TOLAYER3: packet being lost
+
+EVENT time: 33.871037,  type: 1, fromlayer5  entity: 0
+A is sending packet 5
+
+EVENT time: 37.673828,  type: 0, timerinterrupt   entity: 0
+Elite-zx: sender A GO BACK N, from packet 1 to packet 5 
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being lost
+
+EVENT time: 40.198830,  type: 2, fromlayer3  entity: 1
+notcorrupt and expected packet 2! sending right ACK 2!
+          TOLAYER3: packet being corrupted
+
+EVENT time: 42.929070,  type: 2, fromlayer3  entity: 1
+notcorrupt and expected packet 3! sending right ACK 3!
+          TOLAYER3: packet being corrupted
+
+EVENT time: 43.689571,  type: 1, fromlayer5  entity: 0
+A is sending packet 6
+
+EVENT time: 45.777447,  type: 2, fromlayer3  entity: 0
+ACK 2 packet is not corrupt or duplicated! 
+The earliest sent packet is acknowledged, restart timer and move sliding window!
+
+EVENT time: 46.916771,  type: 1, fromlayer5  entity: 0
+A is sending packet 7
+
+EVENT time: 47.087654,  type: 2, fromlayer3  entity: 1
+corrupt or not expected packet 4 (5)! sending last receiving ACK 3!
+
+EVENT time: 52.027382,  type: 2, fromlayer3  entity: 0
+ACK 3 packet is not corrupt or duplicated! 
+The earliest sent packet is acknowledged, restart timer and move sliding window!
+
+EVENT time: 52.925625,  type: 2, fromlayer3  entity: 1
+corrupt or not expected packet 4 (2)! sending last receiving ACK 3!
+          TOLAYER3: packet being corrupted
+
+EVENT time: 53.304844,  type: 2, fromlayer3  entity: 0
+duplicated ACK 3
+EVENT time: 54.800819,  type: 2, fromlayer3  entity: 1
+corrupt or not expected packet 4 (3)! sending last receiving ACK 3!
+          TOLAYER3: packet being lost
+
+EVENT time: 56.107208,  type: 2, fromlayer3  entity: 1
+corrupt or not expected packet 4 (5)! sending last receiving ACK 3!
+          TOLAYER3: packet being lost
+
+EVENT time: 56.245750,  type: 1, fromlayer5  entity: 0
+A is sending packet 8
+          TOLAYER3: packet being lost
+
+EVENT time: 58.353825,  type: 1, fromlayer5  entity: 0
+A is sending packet 9
+
+EVENT time: 58.922512,  type: 2, fromlayer3  entity: 0
+duplicated ACK 3
+EVENT time: 58.985046,  type: 2, fromlayer3  entity: 1
+corrupt or not expected packet 4 (6)! sending last receiving ACK 3!
+
+EVENT time: 59.565250,  type: 1, fromlayer5  entity: 0
+A is sending packet 10
+
+EVENT time: 63.736423,  type: 1, fromlayer5  entity: 0
+A is sending packet 11
+
+EVENT time: 64.027382,  type: 0, timerinterrupt   entity: 0
+Elite-zx: sender A GO BACK N, from packet 4 to packet 11 
+          TOLAYER3: packet being lost
+
+EVENT time: 65.676392,  type: 2, fromlayer3  entity: 0
+duplicated ACK 3
+EVENT time: 66.103928,  type: 2, fromlayer3  entity: 1
+corrupt or not expected packet 4 (7)! sending last receiving ACK 3!
+
+EVENT time: 68.216652,  type: 2, fromlayer3  entity: 1
+corrupt or not expected packet 4 (9)! sending last receiving ACK 3!
+          TOLAYER3: packet being lost
+
+EVENT time: 69.274315,  type: 1, fromlayer5  entity: 0
+Sending window is full now!
+
+EVENT time: 70.128769,  type: 1, fromlayer5  entity: 0
+Sending window is full now!
+
+EVENT time: 70.699028,  type: 2, fromlayer3  entity: 1
+corrupt or not expected packet 4 (10)! sending last receiving ACK 3!
+          TOLAYER3: packet being corrupted
+
+EVENT time: 72.363205,  type: 2, fromlayer3  entity: 0
+duplicated ACK 3
+EVENT time: 73.199585,  type: 1, fromlayer5  entity: 0
+Sending window is full now!
+
+EVENT time: 73.461227,  type: 2, fromlayer3  entity: 0
+duplicated ACK 3
+EVENT time: 76.027382,  type: 0, timerinterrupt   entity: 0
+Elite-zx: sender A GO BACK N, from packet 4 to packet 11 
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being lost
+
+EVENT time: 80.028046,  type: 2, fromlayer3  entity: 1
+corrupt or not expected packet 4 (11)! sending last receiving ACK 3!
+          TOLAYER3: packet being corrupted
+
+EVENT time: 81.177078,  type: 2, fromlayer3  entity: 0
+ACK 999999 packet  is  corrupt! will timeout and retransmit all packets in the sliding window!
+
+EVENT time: 81.551750,  type: 2, fromlayer3  entity: 1
+corrupt or not expected packet 4 (5)! sending last receiving ACK 3!
+
+EVENT time: 81.891945,  type: 1, fromlayer5  entity: 0
+Sending window is full now!
+
+EVENT time: 85.823540,  type: 1, fromlayer5  entity: 0
+Sending window is full now!
+
+EVENT time: 88.027382,  type: 0, timerinterrupt   entity: 0
+Elite-zx: sender A GO BACK N, from packet 4 to packet 11 
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+
+EVENT time: 89.120270,  type: 2, fromlayer3  entity: 0
+duplicated ACK 3
+EVENT time: 89.349884,  type: 1, fromlayer5  entity: 0
+Sending window is full now!
+
+EVENT time: 90.986237,  type: 2, fromlayer3  entity: 1
+corrupt or not expected packet 4 (6)! sending last receiving ACK 3!
+
+EVENT time: 96.696312,  type: 2, fromlayer3  entity: 0
+duplicated ACK 3
+EVENT time: 98.626846,  type: 1, fromlayer5  entity: 0
+Sending window is full now!
+
+EVENT time: 99.812141,  type: 2, fromlayer3  entity: 1
+corrupt or not expected packet 4 (7)! sending last receiving ACK 3!
+
+EVENT time: 100.027382,  type: 0, timerinterrupt   entity: 0
+Elite-zx: sender A GO BACK N, from packet 4 to packet 11 
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being lost
+
+EVENT time: 102.079903,  type: 1, fromlayer5  entity: 0
+Sending window is full now!
+
+EVENT time: 103.761749,  type: 1, fromlayer5  entity: 0
+ Simulator terminated at time 103.761749
+ after sending 20 msgs from layer5
